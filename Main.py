@@ -6,7 +6,7 @@ import time
 pyautogui.useImageNotFoundException()
 
 minigameScript = ["Rail_Riders"]
-minigameScriptIndex = 0
+minigameScriptIndex = int
 index = int
 
 #temp input
@@ -16,32 +16,49 @@ def tempInput(index):
         index = int(input("input index of minigame: "))
     return index
 
-if __name__ == "__main__":
+time.sleep(3)
 
-    time.sleep(3)
+#check for minigames
+def MinigameIndex():
+    index = 0
+    while (index < len(minigameScript)):
+        try:
+            temp=pyautogui.locateOnScreen(f'{minigameScript[index]}.PNG', region=(650,50,600,50), confidence=.95)
+            return(index)
+        except Exception as e:
+            index=index+1
+    #universal not found
+    index = -1 
+    return index
+
+
+
+if __name__ == "__main__":
 
     #imports the minigame scripts
     for script in minigameScript:
         exec(f"import {script}")
 
-    #temp input system
+    x=1
 
-    minigameScriptIndex=tempInput(index)
-
-    exec(f"{minigameScript[minigameScriptIndex]}.run()")
+    while (x==1):
 
 
+        minigameScriptIndex=MinigameIndex()
 
+        time.sleep(2)
 
-
-
-
-
+        if (minigameScriptIndex > -1):
+            exec(f"{minigameScript[minigameScriptIndex]}.run()")
 
 
 
 
 
+
+
+
+#{minigameScript[index]}
 
 
 

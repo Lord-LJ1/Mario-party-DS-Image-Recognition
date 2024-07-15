@@ -8,7 +8,9 @@ def run():
     pyautogui.MINIMUM_DURATION = 0.01
     pyautogui.PAUSE = 0.007
 
-    time_end = time.time() + 21
+    time_end = time.time() + 30
+
+    time.sleep(8)
 
     #loop is bc somtimes press would drop, cant have higher duration
     i=0
