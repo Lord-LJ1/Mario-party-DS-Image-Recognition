@@ -10,8 +10,6 @@ def run():
 
     time_end = time.time() + 30
 
-    time.sleep(8)
-
     #loop is bc somtimes press would drop, cant have higher duration
     i=0
     while (i<10):
