@@ -5,7 +5,7 @@ import time
 # force use of ImageNotFoundException
 pyautogui.useImageNotFoundException()
 
-minigameScript = ["Rail_Riders","Study_Fall"]
+minigameScript = ["Rail_Riders","Study_Fall","Domino_Effect"]
 minigameScriptIndex = int
 index = int
 
@@ -14,7 +14,7 @@ def MinigameIndex():
     index = 0
     while (index < len(minigameScript)):
         try:
-            temp=pyautogui.locateOnScreen(f'{minigameScript[index]}.PNG', region=(650,50,600,50), confidence=.95)
+            pyautogui.locateOnScreen(f'{minigameScript[index]}.PNG', region=(650,50,600,50), confidence=.95)
             return(index)
         except Exception as e:
             index=index+1
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
 #controls for ds
 # d-pad: W, A, S, D
-# buttons: P, L, ;, '
+# buttons: i(X), j(Y), k(B), l(A)
 # triggers: L-shift, R-shift
 # mic: Space
 

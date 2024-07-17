@@ -13,8 +13,8 @@ def run():
     #loop is bc somtimes press would drop, cant have higher duration
     i=0
     while (i<10):
-        pyautogui.keyDown("'")
-        pyautogui.keyUp("'")
+        pyautogui.keyDown("l")
+        pyautogui.keyUp("l")
         i=i+1
 
 

@@ -9,8 +9,8 @@ def run():
 
     i=0
     while (i<10):
-        pyautogui.keyDown("'")
-        pyautogui.keyUp("'")
+        pyautogui.keyDown("l")
+        pyautogui.keyUp("l")
         i=i+1
 
     check = False
@@ -24,7 +24,7 @@ def run():
 
     i=0
     while (i<10):
-        pyautogui.keyDown("'")
-        pyautogui.keyUp("'")
+        pyautogui.keyDown("l")
+        pyautogui.keyUp("l")
         i=i+1
 
