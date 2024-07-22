@@ -5,7 +5,7 @@ import time
 
 def run():
 
-    pyautogui.MINIMUM_DURATION = 0.01
+    pyautogui.MINIMUM_DURATION = 0.09
     pyautogui.PAUSE = 0.007
 
     time_end = time.time() + 30

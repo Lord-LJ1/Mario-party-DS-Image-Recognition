@@ -22,7 +22,7 @@ def run():
     button = -1
     finish = False
     time.sleep(6)
-    print("start")
+
     while (finish == False):
         while (button == -1):
             try:
@@ -35,7 +35,7 @@ def run():
                     index = 0
             if (button != -1):
                 i=0    
-                while (i<8):
+                while (i<6):
                     pyautogui.keyDown(button)
                     pyautogui.keyUp(button)
                     i=i+1
