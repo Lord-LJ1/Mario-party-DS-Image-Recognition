@@ -5,7 +5,7 @@ import time
 # force use of ImageNotFoundException
 pyautogui.useImageNotFoundException()
 
-minigameScript = ["Rail_Riders","Study_Fall","Domino_Effect","Cherry_Go_Round","Trace_Cadets","Get_The_Lead_Out","Hot_Shot","Cheep_Cheep_Chance"]
+minigameScript = ["Rail_Riders","Study_Fall","Domino_Effect","Cherry_Go_Round","Trace_Cadets","Get_The_Lead_Out","Hot_Shot","Pedal_Pushers","Cheep_Cheep_Chance","Boogie_Beam","Dust_Buddies"]
 minigameScriptIndex = int
 index = int
 
